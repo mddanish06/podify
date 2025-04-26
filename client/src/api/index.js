@@ -1,7 +1,7 @@
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 //https://Podify.onrender.com/api
-const API = axios.create({ baseURL: `http://localhost:3000/api` });
+const API = axios.create({ baseURL: `https://podifyapp.onrender.com/api` });
 
 //auth
 export const signIn = async ({ email, password }) =>
