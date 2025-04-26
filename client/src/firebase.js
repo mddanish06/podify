@@ -1,8 +1,8 @@
 // Import Firebase core and storage
 import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage"; // ✅ Required for file uploads
+import { getStorage } from "firebase/storage";
 // Optional: Analytics
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

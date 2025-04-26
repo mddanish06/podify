@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Signup from "../src/components/Signup.jsx";
 import Signin from "../src/components/Signin.jsx";
-import OTP from "../src/components/OTP.jsx";
 import Navbar from "../src/components/Navbar.jsx";
 import Menu from "../src/components/Menu.jsx";
 import Dashboard from "../src/pages/Dashboard.jsx";
@@ -45,11 +44,11 @@ function App() {
   );
   const { opensi } = useSelector((state) => state.signin);
   const [SignUpOpen, setSignUpOpen] = useState(false);
-  const [SignInOpen, setSignInOpen] = useState(false);
+  const [, setSignInOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(true);
   const [uploadOpen, setUploadOpen] = useState(false);
 
-  const { currentUser } = useSelector((state) => state.user);
+  // const { currentUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   //set the menuOpen state to false if the screen size is less than 768px
   useEffect(() => {
@@ -67,7 +66,7 @@ function App() {
 
   useEffect(() => {
     dispatch(closeSignin());
-  }, []);
+  }, [dispatch]);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
