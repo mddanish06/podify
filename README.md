@@ -2,7 +2,7 @@
 
 ## Podcast Streaming Application
 
-### Deployed Link : [View Webapp](https://Podify.netlify.app/)
+### Deployed Link : [View Webapp](https://podifylive.netlify.app/)
 
 ### This is a web application for streaming podcasts with the following features:
 
